@@ -1,7 +1,5 @@
 package algorithm.sort;
 
-import java.util.Arrays;
-
 /**
  * 归并排序
  */
