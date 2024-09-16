@@ -14,7 +14,7 @@ public class BinaryTreeTest {
         inOrder.execute(node,list);
         postOrder.execute(node,list);
         preOrder.showTree();
-        inOrder.showTree();
+//        inOrder.showTree();
         postOrder.showTree();
     }
 }
