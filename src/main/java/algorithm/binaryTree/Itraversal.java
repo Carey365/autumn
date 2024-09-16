@@ -1,19 +1,20 @@
 package algorithm.binaryTree;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
 public interface Itraversal {
-    List<Integer> list = new ArrayList<>();
 
     void exectue(TreeNode node);
 
     void execute(TreeNode node, LinkedList<TreeNode> stack);
 
-    default void showTree(){
+    default void showTree(List<Integer> list){
+        StringBuilder str = new StringBuilder();
         for (Integer n:list){
-            System.out.println(n);
+            str.append(n);
+            str.append(" ");
         }
+        System.out.println(str);
     }
 }

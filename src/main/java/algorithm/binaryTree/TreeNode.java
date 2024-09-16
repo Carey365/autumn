@@ -22,7 +22,7 @@ public class TreeNode {
     }
 
     static TreeNode buildTree(int[] nums, int index) {
-        if(index>=nums.length){
+        if (index >= nums.length) {
             return null;
         }
         TreeNode node = new TreeNode(nums[index]);
