@@ -39,10 +39,10 @@ public class ListNode {
         return length;
     }
 
-    public static ListNode reverse(ListNode node){
+    public static ListNode reverse(ListNode node) {
         ListNode pre = null;
         ListNode cur = node;
-        while(cur!=null){
+        while (cur != null) {
             ListNode next = cur.next;
             cur.next = pre;
             pre = cur;
@@ -51,9 +51,9 @@ public class ListNode {
         return pre;
     }
 
-    public static void printList(ListNode node){
+    public static void printList(ListNode node) {
         StringBuilder str = new StringBuilder();
-        while (node!=null){
+        while (node != null) {
             str.append(node.val);
             str.append(" ");
             node = node.next;

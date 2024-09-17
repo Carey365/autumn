@@ -1,10 +1,11 @@
 package algorithm.list;
+
 import java.util.*;
 
 public class LRU {
     ListNode dummyHead;
     ListNode dummyTail;
-    Map<Integer,ListNode> map;
+    Map<Integer, ListNode> map;
     int size;
     int capacity;
 
@@ -16,13 +17,14 @@ public class LRU {
 
         ListNode() {
         }
-        ListNode(int key,int value){
+
+        ListNode(int key, int value) {
             this.key = key;
             this.value = value;
         }
     }
 
-    LRU(int capacity){
+    LRU(int capacity) {
         this.capacity = capacity;
         this.map = new HashMap<>();
         this.dummyHead = new ListNode();
@@ -31,26 +33,25 @@ public class LRU {
         dummyTail.pre = dummyHead;
     }
 
-    public int get(int key){
-        if(!map.containsKey(key)){
+    public int get(int key) {
+        if (!map.containsKey(key)) {
             return -1;
         }
         moveToHead(key);
         return map.get(key).value;
     }
 
-    public void add(int key,int value){
-        if(map.containsKey(key)){
+    public void add(int key, int value) {
+        if (map.containsKey(key)) {
             removeNode(key);
-        }
-        else if(size>=capacity){
+        } else if (size >= capacity) {
             removeTail();
         }
-        addToHead(key,value);
+        addToHead(key, value);
     }
 
 
-    private void removeTail(){
+    private void removeTail() {
         ListNode tail = dummyTail.pre;
         ListNode newTail = tail.pre;
         newTail.next = dummyTail;
@@ -59,7 +60,7 @@ public class LRU {
         size--;
     }
 
-    private void removeNode(int key){
+    private void removeNode(int key) {
         ListNode node = map.get(key);
         ListNode pre = node.pre;
         ListNode next = node.next;
@@ -69,10 +70,10 @@ public class LRU {
         size--;
     }
 
-    private void addToHead(int key,int value){
+    private void addToHead(int key, int value) {
         ListNode head = dummyHead.next;
-        ListNode newHead = new ListNode(key,value);
-        map.put(key,newHead);
+        ListNode newHead = new ListNode(key, value);
+        map.put(key, newHead);
         dummyHead.next = newHead;
         newHead.pre = dummyHead;
         newHead.next = head;
@@ -80,10 +81,10 @@ public class LRU {
         size++;
     }
 
-    private void moveToHead(int key){
+    private void moveToHead(int key) {
         ListNode node = map.get(key);
         removeNode(key);
-        addToHead(key,node.value);
+        addToHead(key, node.value);
     }
 
 

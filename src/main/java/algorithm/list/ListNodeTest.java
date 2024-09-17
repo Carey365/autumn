@@ -15,15 +15,15 @@ public class ListNodeTest {
 //        //打印翻转后的链表
 //        ListNode.printList(reverse);
         LRU lru = new LRU(3);
-        lru.add(1,2);
-        lru.add(2,3);
-        lru.add(3,4);
-        lru.add(4,5);
+        lru.add(1, 2);
+        lru.add(2, 3);
+        lru.add(3, 4);
+        lru.add(4, 5);
         System.out.println(lru.get(1));
         System.out.println(lru.get(2));
         System.out.println(lru.get(3));
         System.out.println(lru.get(4));
-        lru.add(1,2);
+        lru.add(1, 2);
         System.out.println(lru.get(2));
     }
 }
