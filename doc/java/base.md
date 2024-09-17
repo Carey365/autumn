@@ -8,7 +8,7 @@
 ## Java异常
 ### Throwable类
 #### Exception:程序本身可以处理的异常
-##### Checked Exception:受检异常 编译时异常
+##### Checked Exception:受检异常 编译时异常（@Transactional 默认不回滚）
 1. FileNotFound
 2. ClassNotFound
 ##### Unchecked Exception：非受检异常 运行时异常
