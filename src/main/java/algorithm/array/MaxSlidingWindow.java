@@ -18,18 +18,18 @@ public class MaxSlidingWindow {
         // 遍历nums数组
         for(int i = 0;i < nums.length;i++){
             // 保证从大到小 如果前面数小则需要依次弹出，直至满足要求
-            while(!queue.isEmpty() && nums[queue.peekLast()] <= nums[i]){
-                queue.pollLast();
+            while(!queue.isEmpty() && nums[queue.getLast()] <= nums[i]){
+                queue.removeLast();
             }
             // 添加当前值对应的数组下标
             queue.addLast(i);
             // 判断当前队列中队首的值是否有效
-            if(queue.peek() <= i-k){
-                queue.poll();
+            if(queue.getFirst() <= i-k){
+                queue.removeFirst();
             }
             // 当窗口长度为k时 保存当前窗口中最大值
             if(i+1 >= k){
-                result[i+1-k] = nums[queue.peek()];
+                result[i+1-k] = nums[queue.getFirst()];
             }
         }
         return result;
