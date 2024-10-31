@@ -1,4 +1,4 @@
-package algorithm;
+package algorithm.practice;
 
 import java.util.*;
 
