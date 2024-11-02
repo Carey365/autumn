@@ -1,10 +1,10 @@
-package algorithm.array;
+package algorithm.array.medium;
 
 /**
  * 209. 长度最小的子数组
  */
-public class SlideWindow {
-    public static int minSubArrayLen(int target, int[] nums) {
+public class MinSubArrayLen {
+    public int minSubArrayLen(int target, int[] nums) {
         int slow =0;
         int ans =Integer.MAX_VALUE;
         int sum =0;
@@ -23,5 +23,4 @@ public class SlideWindow {
         }
         return ans;
     }
-
 }

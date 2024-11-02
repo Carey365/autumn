@@ -1,9 +1,12 @@
-package algorithm.string;
+package algorithm.string.medium;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * 71. 简化路径
+ */
 public class SimplifyPath {
     public String simplifyPath(String path) {
         String[] floders = readFolders(path);

@@ -1,4 +1,6 @@
-package algorithm.list;
+package algorithm.list.medium;
+
+import algorithm.list.ListNode;
 
 import java.util.LinkedList;
 

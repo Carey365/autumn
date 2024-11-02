@@ -1,4 +1,4 @@
-package algorithm.list;
+package algorithm.list.medium;
 
 public class ListNodeTest {
 

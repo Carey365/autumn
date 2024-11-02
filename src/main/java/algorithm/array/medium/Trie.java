@@ -1,4 +1,4 @@
-package algorithm.array;
+package algorithm.array.medium;
 
 /**
  * 208. 实现 Trie (前缀树)

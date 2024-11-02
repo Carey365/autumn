@@ -1,4 +1,4 @@
-package algorithm.array;
+package algorithm.array.hard;
 
 /**
  *  42. 接雨水

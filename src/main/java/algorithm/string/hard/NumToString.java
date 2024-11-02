@@ -1,7 +1,10 @@
-package algorithm.string;
+package algorithm.string.hard;
 
 import java.util.*;
 
+/**
+ * 273. 整数转换英文表示
+ */
 public class NumToString {
     String[] maps1 = new String[]{"" ,"One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Eleven","Twelve","Thirteen","Fourteen","Fifteen","Sixteen","Seventeen","Eighteen","Nineteen"};
     String[] maps2 = new String[]{"","","Twenty","Thirty","Forty","Fifty","Sixty","Seventy","Eighty","Ninety"};

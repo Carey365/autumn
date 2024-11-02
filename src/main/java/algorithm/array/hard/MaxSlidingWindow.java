@@ -1,4 +1,4 @@
-package algorithm.array;
+package algorithm.array.hard;
 
 import java.util.Comparator;
 import java.util.LinkedList;

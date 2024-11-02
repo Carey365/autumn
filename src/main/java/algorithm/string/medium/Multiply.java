@@ -1,5 +1,8 @@
-package algorithm.string;
+package algorithm.string.medium;
 
+/**
+ * 43. 字符串相乘
+ */
 public class Multiply {
     public String multiply(String num1, String num2) {
         int[] nums = new int[num1.length()+num2.length()+1];

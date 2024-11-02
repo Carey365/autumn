@@ -1,7 +1,10 @@
-package algorithm.string;
+package algorithm.string.kmp;
 
 import java.util.Arrays;
 
+/**
+ *  459. 重复的子字符串
+ */
 public class RepeatedSubstringPattern {
     public boolean repeatedSubstringPattern1(String s) {
         return s.substring(1,s.length()).concat(s.substring(0,s.length()-1)).indexOf(s) ==-1? false:true;

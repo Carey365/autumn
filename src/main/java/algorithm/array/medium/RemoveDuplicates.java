@@ -1,4 +1,4 @@
-package algorithm.array;
+package algorithm.array.medium;
 
 /**
  * 80. 删除有序数组中的重复项 II

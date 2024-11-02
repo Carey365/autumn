@@ -1,5 +1,8 @@
-package algorithm.string;
+package algorithm.string.kmp;
 
+/**
+ *  28. 找出字符串中第一个匹配项的下标
+ */
 public class StrStr {
     public int strStr1(String haystack, String needle) {
         if(needle.length()>haystack.length()){
