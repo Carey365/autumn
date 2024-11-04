@@ -4,7 +4,7 @@ import java.util.*;
 /**
  *  LCR 036. 逆波兰表达式求值
  */
-public class LCR036 {
+public class EvalRPN {
     public int evalRPN(String[] tokens) {
         LinkedList<Integer> list = new LinkedList<>();
         for(int i=0;i<tokens.length;i++){

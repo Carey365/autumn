@@ -4,7 +4,7 @@ import java.util.*;
 /**
  * LCR 039. 柱状图中最大的矩形
  */
-public class LCR039 {
+public class LargestRectangleArea {
     public int largestRectangleArea(int[] heights) {
         int[] rights = new int[heights.length];
         int[] lefts = new int[heights.length];
